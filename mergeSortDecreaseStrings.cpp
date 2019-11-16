@@ -11,7 +11,7 @@ void  mergeSortDecreaseStrings (AAA  S[]){
 				int M = I + Size;
 				int R = I + 2 * Size;
 				R = (R < n) ? R : n;
-				int* Sort = new int[R - L];
+				double* Sort = new double[R - L];
 
 				while (L + LI < M && M + RI < R){
 		            if (S[a].C[L + LI] > S[a].C[M + RI]){
