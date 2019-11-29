@@ -3,7 +3,7 @@
 using namespace std;
 #define n 5
 
-class AAA
+class Matrix
 {
 private:
 	double C[n];
