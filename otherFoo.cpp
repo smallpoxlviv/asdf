@@ -1,36 +1,36 @@
 #include <iostream>
 #include "ClassAAA.h"
 
-void inputMatrix(AAA  S[])
+void inputMatrix(Matrix  row[])
 {
 	for (int i = 0;i < n;i++)
 		for (int j = 0;j < n;j++)
 		{
 			cout << "[" << i + 1 << "][" << j + 1 << "] = ";
-			cin >> S[i].C[j];
+			cin >> row[i].coloum[j];
 		}
 }
 
-void outputMatrix(AAA  S[])
+void outputMatrix(Matrix  row[])
 {
 	for (int i = 0;i < n;i++)
 	{
 		for (int j = 0;j < n;j++)
-			cout << S[i].C[j] << "\t";
+			cout << row[i].coloum[j] << "\t";
 		cout << endl;
 	}
 }
 
-void avarageGeometricColoums(AAA S[]) {
-	double F = 0.0;
+void avarageGeometricOfColoums(Matrix row[]) {
+	double sumOfGeometricAvarages = 0.0;
 	for (int j = 0;j < n;j++) {
-		double f = 1.0;
+		double geometricAvarage = 1.0;
 		for (int i = 0; i < n; i++) {
-			f = f * S[i].C[j];
+			geometricAvarage = geometricAvarage * row[i].coloum[j];
 		}
-		f = pow(fabs(f), 0.2);
-		F = F + f;
-		cout << "Avarage Geometric in " << j + 1 << " coloum= " << f << endl;
+		geometricAvarage = pow(fabs(geometricAvarage), 0.2);
+		sumOfGeometricAvarages = sumOfGeometricAvarages + geometricAvarage;
+		cout << "Gometric avarage in " << j + 1 << " coloum= " << geometricAvarage << endl;
 	}
-	cout << "Sum of all avarage geometric= " << F << endl;
+	cout << "Sum of all geometric avarage= " << sumOfGeometricAvarages << endl;
 };
