@@ -6,10 +6,10 @@ using namespace std;
 class Matrix
 {
 private:
-	double C[n];
+	double coloum[n];
 public:
-	friend void inputMatrix(AAA S[]);
-	friend void outputMatrix(AAA  S[]);
-	friend void mergeSortDecreaseStrings(AAA  S[]);
-	friend void avarageGeometricColoums(AAA S[]);
+	friend void inputMatrix(Matrix row[]);
+	friend void outputMatrix(Matrix  row[]);
+	friend void mergeSortDecreaseStrings(Matrix  row[]);
+	friend void avarageGeometricOfColoums(Matrix row[]);
 };

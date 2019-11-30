@@ -3,13 +3,13 @@
 using namespace std;
 
 void main() {
-	AAA Matrix[n];
+	Matrix matrix[n];
 	cout << "    Input matrix" << endl;
-	inputMatrix(Matrix);
+	inputMatrix(matrix);
 	cout << "    Unsorted matrix" << endl;
-	outputMatrix(Matrix);
-	mergeSortDecreaseStrings(Matrix);
+	outputMatrix(matrix);
+	mergeSortDecreaseStrings(matrix);
 	cout << "    Sorted matrix" << endl;
-	outputMatrix(Matrix);
-	avarageGeometricColoums(Matrix);
+	outputMatrix(matrix);
+	avarageGeometricOfColoums(matrix);
 }
