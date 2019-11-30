@@ -1,8 +1,7 @@
 #include <iostream>
 #include "ClassAAA.h"
 
-void inputMatrix(Matrix  row[])
-{
+void inputMatrix(Matrix  row[]){
 	for (int i = 0;i < n;i++)
 		for (int j = 0;j < n;j++)
 		{
@@ -11,8 +10,7 @@ void inputMatrix(Matrix  row[])
 		}
 }
 
-void outputMatrix(Matrix  row[])
-{
+void outputMatrix(Matrix  row[]){
 	for (int i = 0;i < n;i++)
 	{
 		for (int j = 0;j < n;j++)
